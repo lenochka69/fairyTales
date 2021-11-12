@@ -18,4 +18,5 @@
             android:icon="@drawable/favorite_foreground"
             android:title="@string/Snow_white" />
     </group>
+
 </menu>

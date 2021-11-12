@@ -14,4 +14,12 @@
     <string name="Сinderella">Сinderella</string>
     <string name="The_little_mermaid">The Little Mermaid</string>
     <string name="Snow_white">Snow White</string>
+    <string name="todo">TODO</string>
+    <string name="fab_content_desc">fab_content_desc</string>
+    <string name="favorite">favorite</string>
+    <string name="content_description_favorite">content_description_favorite</string>
+    <string name="search">search</string>
+    <string name="content_description_search">content_description_search</string>
+    <string name="more">more</string>
+    <string name="content_description_more">content_description_more</string>
 </resources>

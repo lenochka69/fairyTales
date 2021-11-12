@@ -22,4 +22,56 @@
     <style name="Theme.FairyTales.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.FairyTales.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Theme.FairyTales.Switch" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        ...
+        <item name="switchStyle">@style/Widget.App.Switch</item>
+    </style>
+
+    <style name="Widget.App.Switch" parent="Widget.MaterialComponents.CompoundButton.Switch">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.Switch</item>
+    </style>
+
+    <style name="ThemeOverlay.App.Switch" parent="Theme.FairyTales.Switch">
+        <item name="colorOnSurface">@color/pink</item>
+        <item name="colorSecondary">@color/pink</item>
+    </style>
+
+    <style name="Theme.FairyTales." parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        ...
+        <item name="extendedFloatingActionButtonStyle">@style/Widget.App.ExtendedFloatingActionButton</item>
+        <item name="floatingActionButtonStyle">@style/Widget.App.FloatingActionButton</item>
+    </style>
+
+    <style name="Widget.App.ExtendedFloatingActionButton" parent="Widget.MaterialComponents.ExtendedFloatingActionButton.Icon">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.FloatingActionButton</item>
+        <item name="shapeAppearanceOverlay">
+            @style/ShapeAppearance.App.SmallComponent
+        </item>
+    </style>
+
+    <style name="Widget.App.FloatingActionButton" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.FloatingActionButton</item>
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance.App.SmallComponent
+        </item>
+    </style>
+    <style name="ThemeOverlay.App.FloatingActionButton" parent="Widget.App.FloatingActionButton">
+        <item name="colorSecondary">@color/pink</item>
+        <item name="colorOnSecondary">@color/pink</item>
+        <item name="colorOnSurface">@color/pink</item>
+    </style>
+    <style name="Theme.FairyTales.FloatingActionButton." parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        ...
+        <item name="colorSecondary">@color/pink</item>
+        <item name="colorOnSecondary">@color/pink</item>
+        <item name="colorOnSurface">@color/pink</item>
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.App.SmallComponent</item>
+    </style>
+
+    <style name="ShapeAppearance.App.SmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">4dp</item>
+    </style>
+
+
 </resources>

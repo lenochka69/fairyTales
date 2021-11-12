@@ -9,14 +9,17 @@
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:theme="@style/Theme.FairyTales.AppBarOverlay">
+        android:theme="@style/Theme.FairyTales.AppBarOverlay"
+        app:liftOnScroll="true">
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorPrimary"
-            app:popupTheme="@style/Theme.FairyTales.PopupOverlay" />
+            app:popupTheme="@style/Theme.FairyTales.PopupOverlay"
+            app:menu="@menu/main"
+            />
 
 
 
@@ -26,12 +29,16 @@
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/star"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
+        style="@style/Widget.App.FloatingActionButton"
+        android:layout_width="67dp"
+        android:layout_height="37dp"
+        android:layout_gravity="bottom|right"
         android:layout_marginEnd="@dimen/fab_margin"
         android:layout_marginBottom="16dp"
-        app:srcCompat="@android:drawable/btn_star" />
+        android:contentDescription="@string/fab_content_desc"
+        android:src="@mipmap/favorite"
+        app:fabSize="mini"
+        tools:visibility="visible" />
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
