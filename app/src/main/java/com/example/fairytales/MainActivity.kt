@@ -50,11 +50,22 @@ class MainActivity : AppCompatActivity() {
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
 
-        binding.appBarMain.toolbar.setOnClickListener { view ->
-            Snackbar.make(view, "Love", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show()
-
-
+        binding.appBarMain.toolbar.setOnMenuItemClickListener {menuItem ->
+        when (menuItem.itemId) {
+                R.id.favorite -> {
+                    // Handle favorite icon press
+                    true
+                }
+                R.id.search -> {
+                    // Handle search icon press
+                    true
+                }
+                R.id.more -> {
+                    // Handle more item (inside overflow menu) press
+                    true
+                }
+                else -> false
+            }
         }
 
     }
